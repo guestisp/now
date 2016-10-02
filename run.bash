@@ -461,7 +461,7 @@ function install_dashboard {
     tsuru app-create tsuru-dashboard python -o $pool -t admin || true
     pushd ~/
     if [[ ! -d ~/tsuru-dashboard ]]; then
-        git clone https://github.com/tsuru/tsuru-dashboard
+        git clone https://github.com/guestisp/tsuru-dashboard
     fi
     pushd tsuru-dashboard
     git remote add tsuru "git@${private_ip}:tsuru-dashboard.git" || true
